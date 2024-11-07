@@ -1,0 +1,66 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "NiggerWare", HidePremium = false, SaveConfig = true, ConfigFolder = "RoBeats"})
+local Tab = Window:MakeTab({
+	Name = "Welcome!",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+OrionLib:MakeNotification({
+	Name = "Made by d1 femboy ykmatthew!!!",
+	Content = "Notification content... what will it say??",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+Tab:AddToggle({
+	Name = "Boykisser mode??",
+	Default = false,
+	Callback = function(Value)
+		print("I knew u where gay")
+	end    
+})
+Tab:AddSlider({
+	Name = "How many men can u take in the ass at onese?",
+	Min = 0,
+	Max = 20,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Men",
+	Callback = function(Value)
+		
+	end    
+})
+Tab:AddBind({
+	Name = "Keybind your vibrator!",
+	Default = Enum.KeyCode.E,
+	Hold = false,
+	Callback = function()
+		print("BUZZZZZZ UR GAYYYYY")
+	end    
+})
+Tab:AddToggle({
+	Name = "This button grows ur dick by 22 inches!111!1!!!!1",
+	Default = false,
+	Callback = function(Value)
+		print("You wish lmfao")
+	end    
+})
+Tab:AddToggle({
+	Name = "Nigger mode!",
+	Default = false,
+	Callback = function(Value)
+		
+	end    
+})
+local Tab = Window:MakeTab({
+	Name = "RoBeats!",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Auto Player (Made by boykisser 9000 aka ykmatthew)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/sinret/rbxscript.com-scripts-reuploads-/main/robeats%20autoplay", true))()
+  	end    
+})
+OrionLib:Init()
